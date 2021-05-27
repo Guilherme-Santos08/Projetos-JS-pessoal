@@ -3,3 +3,68 @@
    padding: 0;
    box-sizing: 0;
 }
+
+body {
+   background-image: url(https://images6.alphacoders.com/100/1006245.jpg);
+   background-position: center center;
+   background-size: cover;
+
+   font-size: 16px;
+   min-height: 100vh;
+
+}
+
+span {
+   font-size: 3rem;
+}
+span + span {
+   margin-left: 40px;
+}
+
+button {
+   font-size: 0.8rem;
+   
+   width: 80px;
+   padding: 12px 0;
+
+   border-radius: 8px;
+
+   border: none;
+   outline: none;
+   cursor: pointer;
+
+   transition: all .2s ease;
+}
+
+button + button {
+   margin-left: 30px;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;   
+   text-align: center;
+   height: 80vh;
+}
+
+.btns {
+   margin-top: 40px;
+}
+
+.pause {
+   background-color: #F8AF2C;
+}.pause:hover {
+   background-color: #f8c567;
+}
+.start {
+   background-color: #44AD9F;
+}.start:hover {
+   background-color: #5cb6aa;
+}
+.reset {
+   background-color: #FA6135;
+}.reset:hover {
+   background-color: #f87550;
+}
