@@ -24,7 +24,13 @@ const todoShow = () => {
       });
     }
   }
+
   writeUl.appendChild(createLi);
 };
 
 btnSubmit.addEventListener("click", todoShow);
+input.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    btnSubmit.click();
+  }
+});
