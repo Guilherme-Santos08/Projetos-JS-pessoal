@@ -23,8 +23,11 @@ const todoShow = () => {
         createLi.remove();
       });
     }
-  }
-
+  } 
+  
+  let teste = localStorage.setItem("teste", createLi.textContent)
+  localStorage.getItem(teste)
+  
   writeUl.appendChild(createLi);
 };
 
