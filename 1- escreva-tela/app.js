@@ -3,22 +3,30 @@ const btnSubmit = document.querySelector(".btn-write");
 const writeUl = document.querySelector(".write-ul");
 
 const inputPrint = () => {
-   let createLi = document.createElement("li")
-   createLi.innerHTML = input.value
-   input.value = ""
+  let createLi = document.createElement("li");
 
-   if(!createLi.classList.contains("completed")) {
-      createLi.addEventListener("click", () => {
-         createLi.classList.add("completed")
-      })
-   }else {
-      createLi.addEventListener("dblclick", () => {
-         createLi.remove()
-      })
-   }
+  if (!input.value) {
+    return alert("Por favor, preencha o campo");
+  } else {
+    createLi.innerHTML = input.value;
+    input.value = "";
+  }
 
-   writeUl.appendChild(createLi)
-}
+  const haveOrNot = createLi.classList.contains("completed");
+  if (!haveOrNot) {
+    createLi.addEventListener("click", () => {
+      createLi.classList.add("completed");
+      console.log("add");
+    });
+  }
+  if (!haveOrNot) {
+    createLi.addEventListener("dblclick", () => {
+      createLi.remove();
+      console.log("remove");
+    });
+  }
 
+  writeUl.appendChild(createLi);
+};
 
-btnSubmit.addEventListener("click", inputPrint) 
+btnSubmit.addEventListener("click", inputPrint);
