@@ -2,7 +2,7 @@ const input = document.querySelector(".input");
 const btnSubmit = document.querySelector(".btn-write");
 const writeUl = document.querySelector(".write-ul");
 
-const inputPrint = () => {
+const todoShow = () => {
   let createLi = document.createElement("li");
 
   if (!input.value) {
@@ -16,17 +16,15 @@ const inputPrint = () => {
   if (!haveOrNot) {
     createLi.addEventListener("click", () => {
       createLi.classList.add("completed");
-      console.log("add");
     });
-  }
-  if (!haveOrNot) {
-    createLi.addEventListener("dblclick", () => {
-      createLi.remove();
-      console.log("remove");
-    });
-  }
 
+    if (!haveOrNot) {
+      createLi.addEventListener("dblclick", () => {
+        createLi.remove();
+      });
+    }
+  }
   writeUl.appendChild(createLi);
 };
 
-btnSubmit.addEventListener("click", inputPrint);
+btnSubmit.addEventListener("click", todoShow);
