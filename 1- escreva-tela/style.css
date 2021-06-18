@@ -3,3 +3,72 @@
    margin: 0;
    box-sizing: border-box;
 }
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: gray;
+   min-height: 100vh;
+}
+
+main {
+   min-width: 300px;
+   min-height: 300px;
+
+   background-color: azure;
+   border: 2px solid black;
+
+}
+
+.content {
+   padding-bottom: 30px;
+}
+
+.input-write {
+   padding: 30px;
+   border-bottom: 1px solid black;
+}
+
+.input-write input {
+   font-size: 18px;
+   padding: 0 10px;
+
+   width: 100%;
+   height: 40px;
+
+   outline: none;
+   border: 1px solid black;
+   border-radius: 8px;
+}
+
+.write-show {
+   margin-top: 20px;
+   /* background-color: white;
+   width: 100%;
+   height: 100%; */
+}
+
+ul {
+   padding: 0 10px;
+}
+
+li {
+   font-size: 1.3rem;
+	user-select: none;
+
+   padding: 6px 10px;
+   border-radius: 12px;
+
+   background-color: gray;
+   list-style: none;
+}
+
+li.completed {
+   border-left: 8px solid rgb(70, 202, 202);
+}
+
+li + li {
+   margin-top: 10px;
+}
