@@ -14,23 +14,25 @@ body {
   justify-content: center;
 
   background-color: #222831;
-
+  overflow: hidden;
   min-height: 100vh;
 }
 
 h1 {
   font-size: 2.6rem;
   text-align: center;
+  color: #F0F5F9;
 }
 
 main {
-  min-width: 422px;
+  max-width: 422px;
   min-height: 200px;
   padding: 30px;
 
   border-radius: 8px;
   border: 2px solid black;
   background-color: #393e46;
+  margin: 0 10px;
 }
 
 .content {
@@ -42,6 +44,7 @@ main {
 p {
   font-size: 1.1rem;
   text-align: center;
+  color: #F0F5F9;
 }
 
 .inputs {
@@ -51,6 +54,9 @@ p {
 
 .inputs input {
   font-size: 1.3rem;
+
+  padding-left: 20px;
+  padding-right: 5px;
   width: 100%;
   height: 35px;
 
@@ -70,4 +76,31 @@ p {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.tables {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+}
+
+.tables span {
+  color: #F0F5F9;
+}
+
+.tables span + span {
+  margin-top: 3px;
+}
+
+@media (max-width: 470px) {
+  .inputs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputs button {
+    width: 100%;
+    margin-top: 8px;
+  }
 }
