@@ -30,6 +30,8 @@ main {
 
   background-color: #495057;
   border: 2px solid black;
+
+  margin: 0 20px;
 }
 
 .content {
@@ -108,7 +110,7 @@ li + li {
 }
 
 .info {
-  margin-top: 8px;
+  margin: 8px 20px 0;
 }
 .info p {
   text-align: center;
