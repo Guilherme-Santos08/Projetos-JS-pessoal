@@ -76,6 +76,11 @@ p {
   border: none;
   outline: none;
   cursor: pointer;
+
+  transition: opacity .2s ease-in;
+}
+.content button:hover {
+  opacity: 0.8;
 }
 
 .tables {
