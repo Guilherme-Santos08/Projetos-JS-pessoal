@@ -22,8 +22,8 @@ const binToDec = (value) => {
   if (value === "") {
     alert("Preencha o campo, Por favor!");
   } else {
-    let teste = checkLength(value);
-    if (teste === true) {
+    let check = checkLength(value);
+    if (check === true) {
       showResult.innerText = parseInt(value, 2);
     } else {
       alert("Por favor, digite apenas 0 e 1");
