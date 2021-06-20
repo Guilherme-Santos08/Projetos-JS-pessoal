@@ -83,7 +83,7 @@ main {
   margin-top: 30px;
   padding: 18px;
 
-  width: 130px;
+  min-width: 130px;
   height: 60px;
 
   color: black;
