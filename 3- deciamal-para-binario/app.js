@@ -11,7 +11,12 @@ const checkLength = (teste) => {
   return true;
 };
 
-const maxNumber = 8;
+input.oninput = function () {
+  if (this.value.length > 8) {
+    this.value = this.value.slice(0, 8);
+    alert("Por favor, digite apenas 8 digitos");
+  }
+};
 
 const binToDec = (value) => {
   if (value === "") {
@@ -19,19 +24,14 @@ const binToDec = (value) => {
   } else {
     let teste = checkLength(value);
     if (teste === true) {
-      alert("Foi");
+      showResult.innerText = parseInt(value, 2);
     } else {
       alert("Por favor, digite apenas 0 e 1");
       input.value = "";
     }
   }
-
-  if (input.value > 8) {
-    alert("teste");
-  }
 };
 
-bntSubmit.addEventListener("click", (e) => {
-  console.log(input.value);
+bntSubmit.addEventListener("click", () => {
   binToDec(input.value);
 });
