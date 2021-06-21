@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      data-auto-replace-svg
+    ></script>
+  </head>
+  <body>
+    <div class="btns">
+      <div class="inputs">
+        <label for="top-left">Borda superior esquerda:</label>
+        <input type="number" id="top-left" class="top-left" />
+      </div>
+      <div class="inputs">
+        <label for="top-right">Borda superior direita:</label>
+        <input type="number" id="top-right" class="top-right" />
+      </div>
+      <div class="inputs">
+        <label for="bottom-left">Borda inferior esquerda:</label>
+        <input type="number" id="bottom-left" class="bottom-left" />
+      </div>
+      <div class="inputs">
+        <label for="bottom-right">Borda inferior direita:</label>
+        <input type="number" id="bottom-right" class="bottom-right" />
+      </div>
+    </div>
+    <div class="show">
+      <div class="show-radius"></div>
+      <div class="view-copy">
+        <span class="view-radius">
+          border-radius: 0px 0px 0px 0px
+        </span>
+        <span class="copy">
+          <i class="far fa-copy"></i>
+        </span>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
