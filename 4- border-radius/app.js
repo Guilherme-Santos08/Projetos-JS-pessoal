@@ -4,6 +4,7 @@ const bottomLeft = document.querySelector(".bottom-left");
 const bottomRight = document.querySelector(".bottom-right");
 
 const inputs = document.querySelectorAll(".inputs");
+const inputColor = document.querySelector(".input-color");
 
 const showRadius = document.querySelector(".show-radius");
 const viewsRadius = document.querySelector(".view-radius");
@@ -21,8 +22,7 @@ const generateShow = () => {
   const radiusBr =
     (showRadius.style.borderBottomRightRadius = `${bottomRight.value}px`);
 
-  const copy =
-    (viewsRadius.innerHTML = `border-radius: ${radiusTl} ${radiusTr} ${radiusBl} ${radiusBr}`);
+  viewsRadius.innerHTML = `border-radius: ${radiusTl} ${radiusTr} ${radiusBl} ${radiusBr}`;
 };
 
 copyRadius.addEventListener("click", () => {
@@ -38,4 +38,8 @@ inputs.forEach(() => {
   this.addEventListener("keyup", () => {
     generateShow();
   });
+});
+
+inputColor.addEventListener("input", function () {
+  showRadius.style.backgroundColor = inputColor.value;
 });
