@@ -43,7 +43,7 @@ body {
 }
 
 .inputs input {
-   width: 50px;
+   width: 55px;
    height: 30px;
    padding-left: 10px;
    padding-right: 2px;
@@ -72,12 +72,16 @@ body {
 }
 
 .view-copy {
-   background-color: white;
-   padding: 10px;
-   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 
-   font-size: 1.2rem;
+   font-size: 0.9rem;
+   padding: 10px;
    margin-top: 18px;
+
+   border-radius: 5px;
+   background-color: white;
 }
 
 .view-radius {
@@ -86,6 +90,20 @@ body {
 
 .copy {
    cursor: pointer;
+}
+
+.view-radius {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 100%;
+   border: none;
+   overflow: hidden;
+   outline: none;
+}
+.view-radius::selection {
+   display: none;
 }
 
 @media (max-width: 960px) {
