@@ -40,6 +40,6 @@ inputs.forEach(() => {
   });
 });
 
-inputColor.addEventListener("input", function () {
+inputColor.addEventListener("input", () => {
   showRadius.style.backgroundColor = inputColor.value;
 });
