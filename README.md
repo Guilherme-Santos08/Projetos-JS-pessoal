@@ -28,3 +28,10 @@
    - Usar o parseInt para transformar binário em decimal
    
   🔗 Ideia tirada do repositório: [florinpop17](https://github.com/florinpop17/app-ideas). Este repositório contem ideias de projetos, desde os mais fáceis aos mais difíceis.
+
+  ## :bookmark: 4- Border Radius Preview
+   ### O que eu aprendi montando um border-radius preview?
+   - Função para copiar um texto
+   - mudar a cor de uma caixa usando input color
+   - Mostrar alteração em tempo real
+   🔗 Ideia tirada do repositório: [florinpop17](https://github.com/florinpop17/app-ideas). Este repositório contem ideias de projetos, desde os mais fáceis aos mais difíceis.
