@@ -35,3 +35,11 @@
    - mudar a cor de uma caixa usando input color
    - Mostrar alteração em tempo real
    🔗 Ideia tirada do repositório: [florinpop17](https://github.com/florinpop17/app-ideas). Este repositório contem ideias de projetos, desde os mais fáceis aos mais difíceis.
+
+   ## :bookmark: 6- Dado da Sorte
+   ### O que eu aprendi montando um dado da sorte?
+   - Gerar número aleatórios
+   #### Por que não usei diversas if e else if ?
+   - Eu poderia ter criado diversos if, mas preferi treinar minha lógica com loops!
+   #### O que eu não consegui fazer?
+   - Remover uma classe apos adicionar outra.
