@@ -3,3 +3,112 @@
    margin: 0;
    box-sizing: border-box;
 }
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   font-family: "Roboto", sans-serif;
+   height: 100vh;
+}
+
+.dado__numero--2,
+.dado__numero--3,
+.dado__numero--4,
+.dado__numero--5,
+.dado__numero--6 {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px;
+   align-items: center;
+   justify-content: center;
+
+   /* padding: 0 50px; */
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.dado__numero {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: whitesmoke;
+   width: 300px;
+   height: 300px;
+
+   border-radius: 8px;
+   border: 1px solid black;
+}
+
+.dado__numero--teste {
+   padding: 0 75px;
+}
+
+.dado__numero .dado__numero--1 div{
+   width: 30px;
+   height: 30px;
+
+   background-color: black;
+   border-radius: 50%;
+}
+
+.dado__numero .dado__numero--2 div{
+   width: 30px;
+   height: 30px;
+
+   background-color: black;
+   border-radius: 50%;
+}
+
+.dado__numero .dado__numero--3 div{
+   width: 30px;
+   height: 30px;
+
+   background-color: black;
+   border-radius: 50%;
+}
+
+.dado__numero .dado__numero--4 div{
+   width: 30px;
+   height: 30px;
+
+   background-color: black;
+   border-radius: 50%;
+}
+
+.dado__numero .dado__numero--5 div{
+   width: 30px;
+   height: 30px;
+
+   background-color: black;
+   border-radius: 50%;
+}
+
+.dado__numero .dado__numero--6 div{
+   width: 30px;
+   height: 30px;
+
+   background-color: black;
+   border-radius: 50%;
+}
+
+.gerar-dado {
+   font-size: 0.9rem;
+   
+   background-color: aquamarine;
+   margin-top: 18px;
+
+   width: 120px;
+   height: 38px;
+
+   border-radius: 8px;
+   border: 1px solid black;
+   cursor: pointer;
+}
