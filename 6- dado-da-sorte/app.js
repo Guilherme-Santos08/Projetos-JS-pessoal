@@ -19,7 +19,3 @@ btnRandom.addEventListener("click", () => {
   createDiv.innerHTML = "";
   dadoRandom(numberRandom);
 });
-
-// Caso seja true adicione um innerHtml
-
-// Fazer a lógica dos numero aleatório
