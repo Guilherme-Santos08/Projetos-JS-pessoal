@@ -17,6 +17,13 @@ h2 {
   margin-bottom: 20px;
 }
 
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -33,6 +40,7 @@ nav {
 
   height: 48px;
   margin: 0 auto;
+  position: relative;
 }
 
 li {
@@ -41,6 +49,99 @@ li {
   font-size: 1.5rem;
   list-style: none;
   cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  top: 2.5rem;
+
+  /* width: 300px; */
+  /* min-height: 300px; */
+  background-color: white;
+
+  border-radius: 8px;
+  border: 1px solid black;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: background 0.3s ease-in;
+}
+
+.modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.teste {
+  text-align: center;
+  padding: 30px;
+}
+
+.items__span {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #72757e;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 12px;
+}
+
+.products__img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.products__img img {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+}
+
+.products__info--span {
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.products__bnt {
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 30px;
+}
+
+.products__bnt span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+
+  padding: 4px;
+  border-radius: 3px;
+  background-color: #72757e 
+}
+
+.products__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-top: 7px;
+  width: 80px;
+  height: 26px;
+  
+  border-radius: 8px;
+  background-color: #7f5af0;
+}
+.products__btn  button {
+  font-size: 1.1rem;
+  color: #fffffe;
+}
+.products__btn  button + button{
 }
 
 body {
