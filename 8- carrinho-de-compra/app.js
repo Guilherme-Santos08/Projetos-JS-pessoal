@@ -61,3 +61,4 @@ productPrev.addEventListener("click", () => {
 // Montar o modal
 // Criar lógica para mostrar o modal ao clicar no carrinho.
 // Quando clicar no + o produto vai ser mandado para modal de compras.
+// Mostrar pequena sinalização de quantos produto tem no carrinho
