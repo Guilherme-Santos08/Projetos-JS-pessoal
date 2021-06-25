@@ -59,18 +59,26 @@ productPrev.addEventListener("click", () => {
   productShow(currentItem);
 });
 
-function addShop() {
+function shopList() {
   const carItem = [];
   const carModal = document.querySelector(".car-modal");
   const shopSpan = document.querySelector(".items__span--number");
+  const removeItem = document.querySelector(".products__btn--remove");
+
+  let itemSize = 0;
 
   const addItems = () => {
     const productsSize = document.querySelectorAll(".products");
+
     const carName = products.map((p) => p.name);
     const carImg = products.map((p) => p.img);
 
     if (productsSize.length >= 0) {
-      shopSpan.innerHTML = productsSize.length + 1;
+      itemSize++;
+      shopSpan.innerHTML = itemSize;
+    } else if (productsSize.length < itemSize) {
+      itemSize--;
+      shopSpan.innerHTML = itemSize;
     }
 
     carModal.innerHTML += `
@@ -99,7 +107,6 @@ function addShop() {
         </div>
       </div>
         `;
-    // carModal.appendChild(carModal);
 
     for (let i = 0; i > 0; i++) {}
   };
@@ -110,7 +117,7 @@ function addShop() {
     modaToggle.classList.toggle("active");
   });
 }
-addShop();
+shopList();
 
 // Mostrar pequena sinalização de quantos produto tem no carrinho
 // Mostrar as informações de cada item no modal ao adicionar
