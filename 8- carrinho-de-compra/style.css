@@ -73,9 +73,13 @@ li {
   opacity: 1;
 }
 
-.teste {
+.container-modal {
   text-align: center;
   padding: 30px;
+}
+
+.products + .products {
+  margin-top: 30px;
 }
 
 .items__span {
@@ -140,8 +144,6 @@ li {
 .products__btn  button {
   font-size: 1.1rem;
   color: #fffffe;
-}
-.products__btn  button + button{
 }
 
 body {
