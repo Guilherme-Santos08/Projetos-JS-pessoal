@@ -62,22 +62,27 @@ productPrev.addEventListener("click", () => {
 function addShop() {
   const carItem = [];
   const carModal = document.querySelector(".car-modal");
-  const containerModal = document.createElement("div");
-  // containerModal.classList.add("products");
+  const shopSpan = document.querySelector(".items__span--number");
 
   const addItems = () => {
-    for (let i = 0; i < products.length - 2; i++)
-      carItem.push(products[currentItem]);
-    containerModal.innerHTML += `
+    const productsSize = document.querySelectorAll(".products");
+    const carName = products.map((p) => p.name);
+    const carImg = products.map((p) => p.img);
+
+    if (productsSize.length >= 0) {
+      shopSpan.innerHTML = productsSize.length + 1;
+    }
+
+    carModal.innerHTML += `
       <div class="products">
         <div class="products__img">
           <img
-            src="https://images.pexels.com/photos/841228/pexels-photo-841228.jpeg?cs=srgb&dl=pexels-karol-d-841228.jpg&fm=jpg"
+            src="${carImg[currentItem]}"
             alt="Foto do produto"
           />
         </div>
         <div class="products__info">
-          <span class="products__info--span"> Teclado </span>
+          <span class="products__info--span"> ${carName[currentItem]} </span>
         </div>
         <div class="products__bnt">
           <div class="products__btn--unidade">
@@ -94,8 +99,9 @@ function addShop() {
         </div>
       </div>
         `;
-    carModal.appendChild(containerModal);
-    console.log(carItem);
+    // carModal.appendChild(carModal);
+
+    for (let i = 0; i > 0; i++) {}
   };
 
   addInCar.addEventListener("click", addItems);
