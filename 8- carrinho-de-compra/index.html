@@ -27,60 +27,49 @@
   <body>
     <header>
       <nav>
-        <li><i class="fas fa-cart-plus"></i></li>
+        <li class="open-modal" >
+          <i class="fas fa-cart-plus"></i>
+        </li>
 
         <div class="modal active">
-          <div class="modal__products">
-            <div class="teste">
-              <div class="items">
-                <span class="items__span">
-                  1 item no seu carrinho
-                </span>
+            <div class="container-modal">
+
+              <div class="modal__products">
+                <div class="items">
+                  <span class="items__span"> 1 item no seu carrinho </span>
+                </div>
+
+              <div class="car-modal">
+                
               </div>
-              <div class="products">
-                <div class="products__img">
-                  <img src="https://images.pexels.com/photos/841228/pexels-photo-841228.jpeg?cs=srgb&dl=pexels-karol-d-841228.jpg&fm=jpg" alt="Foto do produto">
-                </div>
-                <div class="products__info">
-                  <span class="products__info--span" >
-                    Teclado
-                  </span>
-                </div>
-                <div class="products__bnt">
-                  <div class="products__btn--unidade">
-                    <span>1</span>
-                  </div>
-                  <div class="products__btn">
-                    <button class="products__bnt--remove">
-                      <i class="far fa-minus-square"></i>
-                    </button>
-                    <button class="products__bnt--add">
-                      <i class="far fa-plus-square"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
-        </div>
 
+        </div>
       </nav>
     </header>
     <main>
-       <div class="buys">
-         <div class="buys__names">
-           <h2 class="title">Teclado</h2>
-         </div>
-         <div class="imgs">
-           <img class="buys__imgs--img" src="https://images.pexels.com/photos/841228/pexels-photo-841228.jpeg?cs=srgb&dl=pexels-karol-d-841228.jpg&fm=jpg" alt="Foto do teclado">
-         </div>
-         <div class="buys__info">
-           <span>Sobre o produto:</span>
-           <p class="buys__info--p">
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio necessitatibus veniam iusto reiciendis eius ex sed facere esse, quisquam eos.
-            </p>
-         </div>
-         <div class="buys__btns">
+      <div class="buys">
+        <div class="buys__names">
+          <h2 class="title">Teclado</h2>
+        </div>
+        <div class="imgs">
+          <img
+            class="buys__imgs--img"
+            src="https://images.pexels.com/photos/841228/pexels-photo-841228.jpeg?cs=srgb&dl=pexels-karol-d-841228.jpg&fm=jpg"
+            alt="Foto do teclado"
+          />
+        </div>
+        <div class="buys__info">
+          <span>Sobre o produto:</span>
+          <p class="buys__info--p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+            necessitatibus veniam iusto reiciendis eius ex sed facere esse,
+            quisquam eos.
+          </p>
+        </div>
+        <div class="buys__btns">
           <button class="buys__btns--prev">
             <i class="fas fa-arrow-left"></i>
           </button>
@@ -90,8 +79,8 @@
           <button class="buys__btns--add">
             <i class="fas fa-plus"></i>
           </button>
-         </div>
-       </div>
+        </div>
+      </div>
     </main>
     <script src="app.js"></script>
   </body>
