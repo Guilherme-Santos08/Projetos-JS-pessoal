@@ -106,7 +106,7 @@ function addShop() {
 }
 addShop();
 
-// Montar o modal
-// Criar lógica para mostrar o modal ao clicar no carrinho.
-// Quando clicar no + o produto vai ser mandado para modal de compras.
 // Mostrar pequena sinalização de quantos produto tem no carrinho
+// Mostrar as informações de cada item no modal ao adicionar
+// Remover o item do carrinho
+// Quando se o mesmo produto se repetir ele não adicionar em baixo e sim mostra as quantidade ali do lado
