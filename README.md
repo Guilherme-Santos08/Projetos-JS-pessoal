@@ -43,3 +43,12 @@
    - Eu poderia ter criado diversos if, mas preferi treinar minha lógica com loops!
    #### O que eu não consegui fazer?
    - Remover uma classe apos adicionar outra.
+
+   ## :bookmark: 7- Adicionar ao carrinho
+   ### O que eu aprendi montando um carrinho de compra?
+   - Usar o metodo push do array
+   ### Porque não consegui finalizar o projeto?
+   - Acabei me perdendo do código
+   - Não consegui remover os item do carrinho
+   ### Ainda vou terminar o projeto?
+   - Sim, vou termina-lo mas agora vou dar prioridade para outros projetos e ganhar bastante Xp para terminar esse projeto!
