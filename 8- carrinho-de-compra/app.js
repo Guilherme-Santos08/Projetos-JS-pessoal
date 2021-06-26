@@ -63,24 +63,13 @@ function shopList() {
   const carItem = [];
   const carModal = document.querySelector(".car-modal");
   const shopSpan = document.querySelector(".items__span--number");
-  const removeItem = document.querySelector(".products__btn--remove");
+  const productsSize = document.querySelectorAll(".products");
 
   let itemSize = 0;
 
   const addItems = () => {
-    const productsSize = document.querySelectorAll(".products");
-
     const carName = products.map((p) => p.name);
     const carImg = products.map((p) => p.img);
-
-    if (productsSize.length >= 0) {
-      itemSize++;
-      shopSpan.innerHTML = itemSize;
-    } else if (productsSize.length < itemSize) {
-      itemSize--;
-      shopSpan.innerHTML = itemSize;
-    }
-
     carModal.innerHTML += `
       <div class="products">
         <div class="products__img">
@@ -97,10 +86,10 @@ function shopList() {
             <span>1</span>
           </div>
           <div class="products__btn">
-            <button class="products__bnt--remove">
+            <button class="products__btn--remove">
               <i class="far fa-minus-square"></i>
             </button>
-            <button class="products__bnt--add">
+            <button class="products__btn--add">
               <i class="far fa-plus-square"></i>
             </button>
           </div>
@@ -108,11 +97,15 @@ function shopList() {
       </div>
         `;
 
-    for (let i = 0; i > 0; i++) {}
+    if (productsSize.length >= 0) {
+      itemSize++;
+      shopSpan.innerHTML = itemSize;
+    } else if (productsSize.length < itemSize) {
+      itemSize--;
+      shopSpan.innerHTML = itemSize;
+    }
   };
-
   addInCar.addEventListener("click", addItems);
-
   openModal.addEventListener("click", () => {
     modaToggle.classList.toggle("active");
   });
