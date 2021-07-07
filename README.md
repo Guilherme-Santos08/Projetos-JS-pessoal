@@ -47,8 +47,17 @@
    ## :bookmark: 7- Adicionar ao carrinho
    ### O que eu aprendi montando um carrinho de compra?
    - Usar o metodo push do array
-   ### Porque não consegui finalizar o projeto?
+   #### Porque não consegui finalizar o projeto?
    - Acabei me perdendo do código
    - Não consegui remover os item do carrinho
-   ### Ainda vou terminar o projeto?
+   #### Ainda vou terminar o projeto?
    - Sim, vou termina-lo mas agora vou dar prioridade para outros projetos e ganhar bastante Xp para terminar esse projeto!
+
+   ## :bookmark: 8- API-Pokedex
+   ### O que eu aprendi consumindo uma api pokemon?
+   - Consumir uma API
+   - Acessar recursos da API
+   - padStart e toString
+   - Dependendo do tipo do pokemon, ele altera a cor do fundo do card (Aprendi vendo o vídeo do florinpop)
+   #### O que eu não consegui fazer?
+   - Ao chegar no final da página ele carrega novos pokemon
