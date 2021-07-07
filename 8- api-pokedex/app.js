@@ -1,11 +1,11 @@
 const main = document.querySelector("main");
-const pokemon_number = 5
+const pokemon_number = 36;
 
-const pokemonGenerator =  async () => {
-   for(let i = 1; i <= pokemon_number; i++) {
-      await getPokemon(i)
-   }
-}
+const pokemonGenerator = async () => {
+  for (let i = 1; i <= pokemon_number; i++) {
+    await getPokemon(i);
+  }
+};
 
 async function getPokemon(id) {
   const API_URL = `https://pokeapi.co/api/v2/pokemon/${id}/`;
@@ -20,29 +20,24 @@ async function getPokemon(id) {
 pokemonGenerator();
 
 function createCardPokemon(pokemons) {
-  main.innerHTML = "";
-
-  const { name, id,  } = pokemons
-  console.log(id)
-
-
+  const { name, id, types } = pokemons;
+  console.log(id);
 
   const cardPokemon = document.createElement("div");
   cardPokemon.classList.add("card");
-
   cardPokemon.innerHTML = `
-      <div class="card__img">
-         <img src="#" alt="">
-       </div>
-       <div class="card__id">
-         <span># 000</span>
-       </div>
-       <div class="card__name">
-         <span>Name</span>
-       </div>
-       <div class="card__type">
-         <span>Type</span>
-       </div>
-       `;
+    <div class="card__img">
+       <img src="https://pokeres.bastionbot.org/images/pokemon/${id}.png" alt="">
+     </div>
+     <div class="card__id">
+       <span>#${id}</span>
+     </div>
+     <div class="card__name">
+       <span>${name}</span>
+     </div>
+     <div class="card__type">
+       <span>${types[0].type.name}</span>
+     </div>
+     `;
   main.appendChild(cardPokemon);
 }
