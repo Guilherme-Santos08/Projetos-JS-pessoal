@@ -1,25 +1,25 @@
 const searchCity = document.getElementById("search")
+const degCity = document.querySelector(".weather__city--deg")
+const nameCity = document.querySelector(".weather__city--city")
+const degMin = document.querySelector(".weather__minMax--min")
+const degMax = document.querySelector(".weather__minMax--max")
+
+
+const apikey = "85dbfd082e140fe6fa341825bd49d648"
 
 async function getWeather(e) {
-   const API_PLACE = `https://api.troposphere.io/place/name/${e}?token=bbce94d2cfc23aefd03a7346b49d6ae929c57ecc2644e3df2c`
-   const resPlace = await fetch(API_PLACE)
-   const dataPlace = await resPlace.json()
+   const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${e}&appid=${apikey}`;
+   const res = await fetch(API_URL)
+   const data = await res.json()
 
-   const teste = (dataPlace.data[0])
-   const {latitude, longitude} = teste
-
-   const API_FORECAST = `https://api.troposphere.io/forecast/${latitude},${longitude}?token=bbce94d2cfc23aefd03a7346b49d6ae929c57ecc2644e3df2c`
-   const resForecast = await fetch(API_FORECAST)
-   const dataForecast = await resForecast.json()
-
-   console.log(dataForecast.data)
-   console.log(dataForecast.data.current.temperature)
+   console.log(data)
 }
 
 getWeather("São Paulo")
 
-// teste(-23.5475,-46.63611)
+// https://www.infoescola.com/fisica/conversao-de-escalas-termometricas/
+// https://github.com/florinpop17/10-projects-10-hours/blob/master/weather-app/script.js
+function KtoC(K) {
+   return Math.floor(K - 273.15);
+}
 
-// searchCity.addEventListener("input", (e) => {
-//    console.log(e.target.value)
-// })
