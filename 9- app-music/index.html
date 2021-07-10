@@ -15,25 +15,47 @@
     />
   </head>
   <body>
+    <h1>Clima tempo</h1>
     <main>
-      <span>Day</span>
-      <div class="weather">
-        <div class="weather__city">
-          <span class="weather__city--deg">11°C</span>
-          <span class="weather__city--city">São Paulo</span>
-        </div>
-        <div class="weather__minMax">
-          <span class="weather__minMax--min">
-            15
-            <span class="weather__minMax--min-text">min</span>
-          </span>
-          <span class="weather__minMax--max">
-            30
-            <span class="weather__minMax--max-text">max</span>
-          </span>
+      <form>
+        <input
+          type="text"
+          class="input-search"
+          required
+          placeholder="Pesquise sua cidade"
+        />
+        <button class="btn-search">Pesquisar</button>
+      </form>
+      <div class="container remove">
+        <span class="day">0</span>
+        <div class="weather">
+          <div class="weather__img">
+            <img src="" alt="" class="weather__img--img" />
+            <span class="weather__img--sky"></span>
+          </div>
+          <div class="weather__city">
+            <span class="weather__city--deg">0°C</span>
+            <span class="weather__city--city">0</span>
+          </div>
+          <div class="weather__minMax">
+            <div class="weather__minMax--min">
+              <span class="weather__minMax--min"> 0 </span>
+              <span class="weather__minMax--min-text">min</span>
+            </div>
+            <div class="weather__minMax--max">
+              <span class="weather__minMax--max"> 0 </span>
+              <span class="weather__minMax--max-text">max</span>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+
+    <footer>
+      <p>API fornecida pela:
+        <a href="https://openweathermap.org/">openweathermap</a>
+      </p>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
