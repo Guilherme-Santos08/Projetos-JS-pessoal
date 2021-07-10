@@ -61,3 +61,9 @@
    - Dependendo do tipo do pokemon, ele altera a cor do fundo do card (Aprendi vendo o vídeo do florinpop)
    #### O que eu não consegui fazer?
    - Ao chegar no final da página ele carrega novos pokemon
+
+   ## :bookmark: 9- Clima Tempo
+   ### O que eu aprendi montando um clima tempo?
+   - Consumir uma api de clima tempo
+   - Conversão de kelvin para Celsius
+   - Mostrar o dia da semana que estamos
