@@ -67,3 +67,9 @@
    - Consumir uma api de clima tempo
    - Conversão de kelvin para Celsius
    - Mostrar o dia da semana que estamos
+
+   ## :bookmark: 10- API GitHub
+   ### O que eu aprendi consumindo uma api do github?
+   - Formtar os número de acordo com seu país
+   - Limpar um formulário após o submit
+   - Colocar o try/catch em prática
