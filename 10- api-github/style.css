@@ -72,9 +72,6 @@ form button:hover {
   text-align: center;
 }
 
-.profile__img {
-  /* max-width: 100%; */
-}
 
 .profile__img img {
   max-width: 95px;
