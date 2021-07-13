@@ -1,5 +1,119 @@
-*{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #222831;
+  height: 100vh;
+}
+
+form input {
+  font-size: 0.9rem;
+
+  width: 180px;
+  height: 28px;
+  padding: 0 10px;
+
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+form button {
+  background-color: #00ADB5;
+  padding: 6px;
+  margin-left: 6px;
+
+  border-radius: 8px;
+
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: opacity .1s ease-in;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+.container.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container {
+  min-width: 360px;
+  background-color: #393E46;
+
+  padding: 18px;
+  margin-top: 30px;
+
+  visibility: visible;
+  opacity: 1;
+
+  border-radius: 8px;
+  border: 3px solid black;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.profile__img {
+  /* max-width: 100%; */
+}
+
+.profile__img img {
+  max-width: 95px;
+  min-width: 95px;
+  max-height: 146px;
+  width: 100%;
+
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.profile__info {
+  margin-left: 30px;
+}
+
+.profile__info--name span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.profile__info--follow {
+  margin-top: 8px;
+}
+
+.profile__info--follow span + span {
+  margin-left: 8px;
+}
+
+.profile__repos {
+   margin-top: 8px;
+}
+
+.bio {
+  text-align: center;
+  margin-top: 12px;
+
+  max-width: 238px;
+}
+
+.bio p {
+  font-size: 0.8rem;
 }

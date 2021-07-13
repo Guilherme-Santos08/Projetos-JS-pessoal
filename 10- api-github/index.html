@@ -21,6 +21,32 @@
     />
   </head>
   <body>
+    <form>
+      <input type="text" class="input" required />
+      <button class="btn-search">Buscar Perfil</button>
+    </form>
+    <div class="container hidden">
+      <div class="profile">
+        <div class="profile__img">
+          <img class="profile__img--img" src="" alt="Photo Profile" />
+        </div>
+        <div class="profile__info">
+          <div class="profile__info--name">
+            <span class="profile-name"></span>
+          </div>
+          <div class="profile__info--follow">
+            <span class="profile-followers"></span>
+            <span class="profile-following"></span>
+          </div>
+          <div class="profile__repos">
+            <span class="profile__repos--number"></span>
+          </div>
+          <div class="bio">
+            <p class="bio__p"></p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
