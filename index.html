@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Portifolio</title>
-   <style>
-      body {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         flex-direction: column;
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+         rel="stylesheet"
+      />
+      <title>Portifolio</title>
+      <style>
+         body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #16161a;
+            font-family: 'Roboto', sans-serif;
 
-         min-height: 100vh;
-      }
-      a {
-         color: black;
-      }
-      a + a {
-         margin-top: 10px;
-      }
-   </style>
-</head>
-<body>
-   <a href="./1- todo-list/index.html">Todo-list</a>
-   <a href="./2- tabuada/index.html">Tabuada</a>
-   <a href="./3- deciamal-para-binario/index.html">Binario para decimal</a>
-   <a href="./4- border-radius/index.html">border-radius Preview</a>
-   <a href="./5- google-search/index.html">google-search</a>
-   <a href="./6- dado-da-sorte/index.html">Dado da sorte</a>
-   <a href="./7- carrinho-de-compra/index.html">Carrinho de Compras</a>
-   <a href="./8- api-pokedex/index.html">API pokemon</a>
-   <a href="./9- clima-tempo/index.html">Clima tempo</a>
-   <a href="./10- api-github/index.html">Buscar perfil no GitHub</a>
-</body>
+            min-height: 100vh;
+            color: #fffffe;
+         }
+         a {
+            color: #94a1b2;
+         }
+         a + a {
+            margin-top: 15px;
+         }
+
+         .js-projects,
+         .react-projects {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border: 3px solid #7f5af0;
+            border-radius: 8px;
+            padding: 30px 40px;
+
+         }
+         .js-projects {
+            margin-bottom: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="js-projects">
+         <h2>Projetos JS</h2>
+         <a href="./1- todo-list/index.html">Todo-list</a>
+         <a href="./2- tabuada/index.html">Tabuada</a>
+         <a href="./3- deciamal-para-binario/index.html"
+            >Binario para decimal</a
+         >
+         <a href="./4- border-radius/index.html">border-radius Preview</a>
+         <a href="./5- google-search/index.html">google-search</a>
+         <a href="./6- dado-da-sorte/index.html">Dado da sorte</a>
+         <a href="./7- carrinho-de-compra/index.html">Carrinho de Compras</a>
+         <a href="./8- api-pokedex/index.html">API pokemon</a>
+         <a href="./9- clima-tempo/index.html">Clima tempo</a>
+         <a href="./10- api-github/index.html">Buscar perfil no GitHub</a>
+      </div>
+      <div class="react-projects">
+         <h2>Projetos React</h2>
+         <a href="https://clone-twitter-react.vercel.app/home">Clone do Twitter com React</a>
+         <a href="https://guilherme-santos08-pomodoro.vercel.app/">Pomodoro</a>
+      </div>
+   </body>
 </html>
