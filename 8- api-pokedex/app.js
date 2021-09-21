@@ -1,4 +1,4 @@
-alert("API fornecida pela 'https://pokeapi.co/docs/v2'");
+// alert("API fornecida pela 'https://pokeapi.co/docs/v2'");
 const main = document.querySelector("main");
 let pokemon_number = 130;
 
@@ -44,6 +44,7 @@ function createCardPokemon(pokemons) {
 
   // Códigos das cores pegada do canal "Florin Pop" 2/2
   const poke_types = pokemons.types.map((type) => type.type.name);
+  // console.log(poke_types)
   const type = main_types.find((type) => poke_types.indexOf(type) > -1);
   const color = colors[type];
 
@@ -54,7 +55,7 @@ function createCardPokemon(pokemons) {
 
   cardPokemon.innerHTML = `
     <div class="card__img">
-       <img src="https://pokeres.bastionbot.org/images/pokemon/${id}.png" alt="">
+       <img src="" alt="">
      </div>
      <div class="card__id">
        <span>#${id.toString().padStart(3, "0")}</span>
